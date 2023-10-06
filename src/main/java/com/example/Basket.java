@@ -9,8 +9,7 @@ public class Basket {
     public Basket(int capacity) {
         // TODO: Initialize the attributes (and initialize the fruits list)
         this.capacity = capacity;
-        capacity=0;
-        
+        this.fruits = new ArrayList<Fruit>();        
     }
 
     public void addFruit(Fruit fruit) {
@@ -27,8 +26,8 @@ public class Basket {
         
     }
     // TODO: Implement getters, setters, and any other methods you find necessary
-    public ArrayList<Fruit> getFruitList() {
-        return fruits;
+    public ArrayList<Fruit> getFruits() {
+        return this.fruits;
     }
 
     public int getCapacity() {
@@ -36,6 +35,10 @@ public class Basket {
     }
     public void setCapacity(int newCapacity) {
         this.capacity = newCapacity;
+    }
+
+    public void setFruits(ArrayList<Fruit> fruits){
+        this.fruits = fruits;
     }
 
 } 
